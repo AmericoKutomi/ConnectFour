@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+<Board BoardColor="System.Drawing.Color.Black" @bind-Player1Color="Player1Color" @bind-Player2Color="Player2Color" />
+
+@code {
+    private System.Drawing.Color Player1Color { get; set; } =
+        System.Drawing.Color.Green;
+
+    private System.Drawing.Color Player2Color { get; set; } =
+        System.Drawing.Color.Purple;
+
+}
